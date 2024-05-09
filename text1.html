@@ -9,7 +9,8 @@
 
 <body>
     <script>
-        // Q.1 
+        // Q.1 find the common element between to array?
+
 
         // function CommonElements(arr1, arr2) {
         //     return arr1.filter(element => arr2.includes(element));
@@ -22,7 +23,29 @@
         // console.log(commonElements);
 
 
-        // Q.2  
+        // without use method 
+
+        function CommonElements(arr1, arr2) {
+       let common = [];
+     for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                common.push(arr1[i]);
+                break; 
+            }
+        }
+    }
+    return common;
+}
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+
+const commonElements = CommonElements(array1, array2);
+console.log(commonElements);
+
+
+        // Q.2 sort an array of string based on their length form sortest to longest ?
 
         // let arrayOfStrings = ["apple", "banana", "kiwi", "orange", "pear"];
 
@@ -31,8 +54,24 @@
         // console.log(arrayOfStrings);
 
 
+        // without method 
 
-        // Q.3
+//         let array = ["apple", "banana", "kiwi", "orange", "pear"];
+//        for (let i = 0; i < array.length - 1; i++) {
+//        for (let j = 0; j < array.length - i - 1; j++) {
+//         if (array[j].length > array[j + 1].length) {
+//             let temp = array[j];
+//             array[j] = array[j + 1];
+//             array[j + 1] = temp;
+//         }
+//     }
+// }
+
+// console.log(array);
+
+
+
+        // Q.3 find the factorial of given number ?
 
         // function factorial(a) {
         //     let result = 1;
@@ -45,7 +84,7 @@
 
 
 
-        // Q.4
+        // Q.4 write a fabbonic sequence up to specified number of terms ?
 
         // let a=0; let b=1
         // document.write(a,"",b)
@@ -57,7 +96,7 @@
         //     b=c
         // }
 
-        // Q.5
+        // Q.5 check if the given string a pallindrome or not?
 
         // let a = 'naman';
         // let b = '';
@@ -72,35 +111,35 @@
         //     document.write("It's not a palindrome.");
         // }
 
-        // Q.6
+        // Q.6 remove duplicate element in array?
 
         // let a = [2, 3, 4, 2, 3, 4, 1];
         // let a1 = [...new Set(a)]
         // document.write(a1, "<br>");
         // document.write(a)
 
-// Q.7
+        // Q.7 .check given number is sorted in accendind order or not ?
 
-// let a = [1, 12, 13, 14, 10, 7, 9, 8, 6];
-// let Sorted = true;
+        // let a = [1, 12, 13, 14, 10, 7, 9, 8, 6];
+        // let Sorted = true;
 
-// for (let i = 0; i < a.length - 1; i++) {
-//     if (a[i] > a[i + 1]) {
-//         Sorted = false;
-//         break;
-//     }
-// }
+        // for (let i = 0; i < a.length - 1; i++) {
+        //     if (a[i] > a[i + 1]) {
+        //         Sorted = false;
+        //         break;
+        //     }
+        // }
 
-// if (Sorted) {
-//     document.write("The array is sorted in ascending order.");
-// } else {
-//     document.write("The array is not sorted in ascending order.");
-// }
-
-
+        // if (Sorted) {
+        //     document.write("The array is sorted in ascending order.");
+        // } else {
+        //     document.write("The array is not sorted in ascending order.");
+        // }
 
 
-        // Q.8
+
+
+        // Q.8 find the largest in array ?
 
         // let a = [2, 7, 5, 2, 1, 9, 10];
         // for (let i = 0; i < a.length; i++) {
@@ -114,8 +153,9 @@
 
         // }
         // document.write(a[a.length - 1])
+        
 
-        // Q.9
+        // Q.9 find the  smallest number in array ?
 
         // let a=[2,7,5,2,1,9,10];
         // for(let i=0;i<a.length;i++){
