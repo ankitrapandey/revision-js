@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ---------------------------dublicate element------------------------------
+        // let a = [2, 3, 4, 2, 3, 4, 1];
+        // let a1 = [...new Set(a)]
+        // document.write(a1, "<br>");
+        // document.write(a)
+        // -----------------------------store dublicate array---------------------
+
+        // let a = [1, 2, 3, 4, 4, 5, 6, 8, 9];
+        // let b = [];
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = 0; j < a.length; j++) {
+        //         if (a[i] ===a[j] && i != j) {
+        //             b.push(a[j]);
+        //         }
+
+        //     }
+
+        // }
+        // console.log(b) 
+        // ------------------------------------sorting--------------------------
+        // let a=[1,12,13,14,10,7,9,8,6]
+        // for(let i=0;i<a.length;i++){
+        //     let max=0
+        //     for(let j=i+1;j<a.length;j++){
+        //         if(a[i]>a[j]){
+        //             max=a[i]
+        //             a[i]=a[j]
+        //             a[j]=max
+        //         }
+
+        //     }
+        //     document.write(a[i],"<br>")
+        // }
+
+
+        // ----------------------------find largest number-------------------------
+        // let a=[2,7,5,2,1,9,10];
+        // for(let i=0;i<a.length;i++){
+        //     for(let j=i+1;j<a.length;j++){
+        //         if(a[i]>a[j]){
+        //             max=a[i]
+        //             a[i]=a[j]
+        //             a[j]=max
+        //         }
+        //     }
+
+        // }
+        // document.write(a[a.length-1])
+        // ------------------------------print even no--------------------
+        // for(let i=0;i<=20;i++){
+        //     if(i%2==0){
+        //         document.write(i,"even number","<br>")
+        //     }
+        // }
+
+        // for(let i=0;i<=20;i++){
+        //     if(i%2!=0){
+        //         document.write(i,"odd number","<br>")
+        //     }
+        // }
+
+        // ----------------------------------------call back function--------------------
+        // let ankit=(name,callback)=>{
+        //     callback();
+        //     document.write("hii "+name)
+        // }
+        // let aman=()=>{
+        //     document.write("hello aman","<br>")
+        // }
+        // ankit("ankit",aman)
+        // -----------------------------------reverse elment----------------------------
+        // let a = "ankit"
+        // for (let i = a.length - 1; i >= 0; i--) {
+        //     document.write(a[i])
+        // }
+
+        // -------------------------------print prime number---------------------------------
+
+        // for (let i = 1; i <= 20; i++) {
+        //     for (var j = 2; j < i; j++) {
+        //         if (i % j == 0) {
+        //             break;
+        //         }
+        //     }
+        //     if (i == j) {
+        //         document.write(i, "<br>")
+        //     }
+        // }
+        // -------------------------------------prime number-------------------------------------
+
+        // for (let i = 1; i <= 10; i++) {
+        //     let fac = 0;
+        //     for (let j = 1; j <= 10; j++) {
+        //         if (i % j == 0) {
+        //             fac++
+        //         }
+        //     }
+        //     if (fac == 2) {
+        //         document.write(i, " prime number <br>")
+        //     }
+        // }
+        // -------------------sum of prime number---------------------------
+        //     let sum = 0
+        //     for (let i = 1; i <= 10; i++) {
+        //         fac = 0;
+        //         for (let j = 1; j <= 10; j++) {
+        //             if (i % j == 0) {
+        //                 fac++
+        //             }
+        //         }
+        //         if (fac == 2) {
+        //             document.write(i, "<br>")
+        //             sum = sum + i
+        //         }
+
+        //     }
+        //     document.write(sum);
+        // ------------------------------------------check prime number or not----------------------------
+        // let a = 7;
+        // let fac = 0
+        // for (let i = 1; i <= a; i++) {
+        //     if (a % i == 0) {
+        //         fac++
+
+        //     }
+        // }
+        // if (fac== 2) {
+        //     document.write(a," prime number <br>");
+        // }
+        // else {
+        //     document.write("it's not prime number")
+        // }
+
+        // -----------------------------fibonacci series------------------------------
+        // let a=0; let b=1
+        // document.write(a,"",b)
+        // let c;
+        // for(let i=1;i<=5;i++){
+        //     c=a+b;
+        //     document.write(" ",c)
+        //     a=b
+        //     b=c
+        // }
+
+        // ---------------------------Armstrong number-------------------------
+
+        // let a = '153'
+        // let sum = 0;
+        // for (let i = 0; i < a.length; i++) {
+        //     sum += parseInt(a[i]) ** a.length;
+        // }
+        // if (sum === parseInt(a)) {
+        //     document.write("it's armstrong number");
+        // }
+        // else {
+        //     document.write("it's not armstrong number");
+        // }
+
+        // -------------------------palindrom -----------------------------
+        // let a='123'
+        // let b=''
+
+        // for(let i=a.length-1;i>=0;i--){
+        //     b+=a[i]
+        //     if(a === b){
+        //         document.write("Its a palindrome ",a)
+        //         break
+        //     }
+
+        // }
+
+        // let a=['naman',"kishan"]
+        // document.write(a[1][0])
+        // document.write("10"+2+4)
+        // document.write(10+2+"4")
+
+        // function shopcart(b,c,...a){
+        // console.log(`i am kishan,${c}`,a)
+        //         }
+        //  shopcart(2,3,4)
+
+        // let p=["apple","cat","plum"];
+        // let n=["banana","papaya","melon"];
+        // let c=p.push(n)
+        // console.log(c)
+        // let d = p
+        // document.write(d)
+
+        // let p=[1,2,3,4,[1,23,4,"poonam"]]
+        // console.log(p[4][3][3])
+
+        // -------------------------function curring-------------------------
+        // let ankit = function (x) {
+        //     return function (y) {
+        //         return x + y;
+
+        //     }
+        // }
+        // let d = ankit(3)(5)
+        // console.log(d)
+
+        // ----------------------------- immidiatly invoked function-------------------
+
+        //    let add= (function(a,b){
+        //         return a+b;
+        //     })
+        //    let d= add(3,5);
+        //    console.log(d)
+
+        // -------------------------check if an Object is an Array or not----------------------------
+        // var obj = [1, 2, 3];
+        // console.log(Array.isArray(obj)); // Output: true
+
+        // --------------------------------------count vowels----------------------
+        // let a='ankitabciou'
+        // let b = 0
+        // for(let i=0;i<a.length;i++){
+        //     if(a[i]==="a"||a[i]==="e"||a[i]==="i"||a[i]==="o"||a[i]==="u"){
+        //         b++
+        //     }
+        // }
+        // document.write(b)
+
+        // -------------------how to empty array 1st-----------------------
+        // let array=[1,2,3,4,5]
+        // array.length=0
+        // console.log(array)
+
+        // 2nd 
+        // let array=[1,2,3,4,5]
+        // array.splice(0,array.length)
+        // console.log(array)
+
+        // -----------------------------check number is an integer-----------------------------
+
+        // console.log(Number.isInteger(5))
+        // -------------------find dublicate array without any method----------------------------
+
+        let a = [1, 2, 3, 4, 7, 8, 9, 4, 3, 2, 1, 5, 9, 6]
+        for (let i = 0; i < a.length; i++) {
+            for (let j = i + 1; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                    document.write(a[i])
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
