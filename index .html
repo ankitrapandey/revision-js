@@ -247,14 +247,26 @@
         // console.log(Number.isInteger(5))
         // -------------------find dublicate array without any method----------------------------
 
-        let a = [1, 2, 3, 4, 7, 8, 9, 4, 3, 2, 1, 5, 9, 6]
-        for (let i = 0; i < a.length; i++) {
-            for (let j = i + 1; j < a.length; j++) {
-                if (a[i] == a[j]) {
-                    document.write(a[i])
-                }
-            }
+        // let a = [1, 2, 3, 4, 7, 8, 9, 4, 3, 2, 1, 5, 9, 6]
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = i + 1; j < a.length; j++) {
+        //         if (a[i] == a[j]) {
+        //             document.write(a[i])
+        //         }
+        //     }
+        // }
+
+let a=[1,2,4,5,99,10]
+for(let i=0;i<a.length;i++){
+    for(let j=i+1;j<a.length;j++){
+        if(a[i]>a[j]){
+            max=a[i]
+            a[i]=a[j]
+            a[j]=max
         }
+    }
+}
+document.write(a[a.length-1]);
 
     </script>
 </body>

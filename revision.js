@@ -49,5 +49,20 @@
 
 
     // use replace 
-    const url="https://ankit.com/ankit%20pandey"
-    console.log(url.replace("%20","-"));
+
+    // const url="https://ankit.com/ankit%20pandey"
+    // console.log(url.replace("%20","-"));
+
+    // let score=10;
+    // console.log(score);
+    // let number=new Number(100);
+    // console.log(number);
+    // console.log(number.toString().length);
+    // console.log(number.toFixed(1))
+    // let otherNumber=123.8
+    // console.log(otherNumber.toPrecision(2))
+
+    // let hundred=1000000;
+    // console.log(hundred.toLocaleString('en-IN'));
+
+    console.log(Math);
