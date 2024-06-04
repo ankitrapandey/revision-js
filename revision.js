@@ -65,4 +65,16 @@
     // let hundred=1000000;
     // console.log(hundred.toLocaleString('en-IN'));
 
-    console.log(Math);
+    // console.log(Math);
+    // console.log(Math.abs(-5))
+    // console.log(Math.round(3.5));
+    // console.log(Math.ceil(4.3));
+    // console.log(Math.floor(4.2));
+
+    // find minimum  and max value 
+    // console.log(Math.min(1,7,64,3));
+    // console.log(Math.max(1,7,64,3));
+
+    // console.log(Math.random());
+// console.log(Math.random()*10+1);
+console.log((Math.random()*10)+1)
