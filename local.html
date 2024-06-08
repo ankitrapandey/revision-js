@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // localStorage 
+        localStorage.setItem('name', 'ankit');
+        localStorage.setItem('Location', 'Rewa');
+        console.log(localStorage.getItem('name'));
+        console.log(localStorage.getItem('Location'));
+        localStorage.removeItem('Location');
+        localStorage.clear('name');
+
+        // sessionStorage 
+        
+        sessionStorage.setItem('city', 'Rewa');
+        sessionStorage.setItem('phone no', 22222);
+        console.log(sessionStorage.getItem('city'));
+        sessionStorage.removeItem('city');
+
+
+    </script>
+</body>
+
+</html>
